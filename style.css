@@ -1,0 +1,680 @@
+/* ===== RESET CƠ BẢN ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== TOÀN TRANG ===== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #000;
+    line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 4px solid #c62828;
+}
+ /* ===============================
+   🎐 TIÊU ĐỀ BÀI HỌC – THEME TẾT
+   =============================== */
+
+header h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 28px;
+
+    text-align: center;      /* 👈 CANH GIỮA */
+    letter-spacing: 1.2px;
+
+    color: #ffeb3b;
+    text-shadow:
+        0 0 4px rgba(251, 192, 45, 0.45),
+        0 0 8px rgba(198, 40, 40, 0.25);
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+/* ===== MENU BÊN TRÁI ===== */
+.sidebar {
+    width: 260px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+
+    /* 👇 QUAN TRỌNG */
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+}
+.sidebar {
+    width: 260px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+
+    position: sticky;
+    top: 20px;
+
+    /* 👇 QUAN TRỌNG */
+    align-self: stretch;
+}
+.sidebar {
+    min-height: calc(100vh - 40px);
+}
+
+.sidebar ul {
+    padding-left: 18px;
+}
+
+.sidebar li {
+    margin-bottom: 14px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 8px 6px;
+    border-radius: 6px;
+}
+
+.sidebar a:hover {
+    background: #e3f2fd;
+}
+
+
+.sidebar a {
+    text-decoration: none;
+    color: #1565c0;          /* 🔵 xanh */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.sidebar a:hover {
+    color: #c62828;          /* 🔴 hover đỏ */
+}
+
+/* ===== NỘI DUNG CHÍNH ===== */
+main {
+    flex: 1;
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ===== MỤC TIÊU BÀI HỌC ===== */
+.goal {
+    background: #fff3cd;
+    border-left: 6px solid #ffc107;
+    padding: 16px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+}
+
+.goal strong {
+    color: #000;
+}
+
+/* ===== TIÊU ĐỀ LA MÃ ===== */
+h2 {
+    color: #1565c0;          /* 🔵 xanh mục La Mã */
+    margin-top: 24px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #bbdefb;
+    padding-bottom: 6px;
+}
+
+/* ===== TIÊU ĐỀ NHỎ ===== */
+h3 {
+    color: #1976d2;
+    margin-top: 14px;
+    margin-bottom: 6px;
+}
+
+/* ===== ĐOẠN VĂN ===== */
+p {
+    color: #000;             /* ⚫ nội dung đen */
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* ===== SECTION ===== */
+.section {
+    margin-bottom: 30px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}
+
+
+.section {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+<div class="note">
+    <strong>📌 Ghi nhớ:</strong>
+    <p>
+        Lĩnh vực kĩ thuật điện gồm nhiều nhóm nghề khác nhau như thiết kế điện,
+        sản xuất thiết bị điện, lắp đặt, vận hành, bảo dưỡng và sửa chữa điện.
+        Mỗi nhóm nghề có yêu cầu trình độ, năng lực và môi trường làm việc riêng.
+    </p>
+</div>
+.note {
+    background: #e3f2fd;
+    border-left: 6px solid #1976d2;
+    padding: 18px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.note strong {
+    color: #0d47a1;
+    font-size: 17px;
+}
+
+.note p {
+    margin-top: 8px;
+    color: #000;
+}
+/* ===== GHI NHỚ NỔI BẬT ===== */
+.note {
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    border-left: 8px solid #d32f2f;   /* viền đỏ nổi bật */
+    padding: 22px;
+    border-radius: 14px;
+    margin-top: 48px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    position: relative;
+}
+
+/* ICON TRANG TRÍ */
+.note::before {
+    content: "★";
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    background: #d32f2f;
+    color: #fff;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+/* TIÊU ĐỀ GHI NHỚ */
+.note strong {
+    display: block;
+    color: #b71c1c;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* NỘI DUNG */
+.note p {
+    font-size: 16px;
+    color: #000;
+    line-height: 1.7;
+}
+.quiz {
+    background: #fafafa;
+    border: 2px dashed #1e88e5;
+    padding: 24px;
+    border-radius: 14px;
+}
+
+.question {
+    background: #fff;
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+}
+
+
+
+/* ẨN ĐÁP ÁN MẶC ĐỊNH */
+.answer {
+    display: none;
+    margin-top: 8px;
+    font-weight: bold;
+    color: #1565c0;
+}
+
+/* ĐÚNG / SAI */
+.question.correct {
+    background: #e8f5e9;
+    border-color: #2e7d32;
+}
+
+.question.wrong {
+    background: #ffebee;
+    border-color: #c62828;
+}
+button {
+    background: linear-gradient(135deg, #1976d2, #42a5f5);
+    color: white;
+    border: none;
+    padding: 12px 26px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(25, 118, 210, 0.35);
+    transition: all 0.3s ease;
+}
+
+/* Hover */
+button:hover {
+    background: linear-gradient(135deg, #1565c0, #1e88e5);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(25, 118, 210, 0.45);
+}
+
+/* Khi bấm */
+button:active {
+    transform: scale(0.96);
+}
+
+/* Canh giữa nút */
+.quiz-actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Hiệu ứng nổi bật khi bấm menu */
+.section.highlight {
+    background: #fff9e6;
+    border-left: 6px solid #ff9800;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(255, 152, 0, 0.25);
+    animation: fadeHighlight 2.5s ease forwards;
+}
+
+/* Hiệu ứng mờ dần */
+@keyframes fadeHighlight {
+    0% {
+        background: #fff9e6;
+    }
+    100% {
+        background: transparent;
+        box-shadow: none;
+        border-left-color: transparent;
+    }
+}
+
+/* ===============================
+   🌸 THEME TẾT NGUYÊN ĐÁN 🌸
+   =============================== */
+
+/* NỀN TOÀN TRANG */
+body {
+    background: linear-gradient(135deg, #fff8e1, #ffebee);
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #b71c1c, #d32f2f);
+    border-bottom: 6px solid #fbc02d;
+}
+
+header h1 {
+    color: #ffeb3b;
+    letter-spacing: 1px;
+}
+
+/* SIDEBAR */
+.sidebar {
+    background: linear-gradient(180deg, #ffffff, #fffde7);
+    border: 3px solid #fbc02d;
+}
+
+.sidebar a {
+    color: #b71c1c;
+}
+
+.sidebar a:hover {
+    background: #ffebee;
+    color: #d32f2f;
+}
+
+/* NỘI DUNG CHÍNH */
+main {
+    background: #fffdf7;
+    border: 3px solid #fbc02d;
+}
+
+/* TIÊU ĐỀ MỤC */
+h2 {
+    color: #b71c1c;
+    border-bottom: 3px solid #fbc02d;
+}
+
+h3 {
+    color: #d32f2f;
+}
+
+/* KHUNG MỤC TIÊU */
+.goal {
+    background: linear-gradient(135deg, #fff9c4, #ffecb3);
+    border-left: 8px solid #f57f17;
+}
+
+/* GHI NHỚ */
+.note {
+    background: linear-gradient(135deg, #fff3e0, #ffebee);
+    border-left: 8px solid #c62828;
+}
+
+.note::before {
+    content: "🧧";
+    background: #c62828;
+}
+
+/* QUIZ */
+.quiz {
+    border: 3px dashed #c62828;
+    background: #fffdf7;
+}
+
+.question.correct {
+    background: #f1f8e9;
+    border-color: #2e7d32;
+}
+
+.question.wrong {
+    background: #ffebee;
+    border-color: #c62828;
+}
+
+/* NÚT BẤM */
+button {
+    background: linear-gradient(135deg, #c62828, #f44336);
+    box-shadow: 0 6px 18px rgba(198, 40, 40, 0.4);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #b71c1c, #d32f2f);
+}
+
+/* HIỆU ỨNG HIGHLIGHT */
+.section.highlight {
+    background: #fff3e0;
+    border-left: 6px solid #f57c00;
+    box-shadow: 0 8px 20px rgba(245, 124, 0, 0.35);
+}
+
+/* FOOTER */
+footer {
+    background: linear-gradient(135deg, #b71c1c, #c62828);
+    color: #ffeb3b;
+    text-align: center;
+    padding: 14px;
+    font-weight: bold;
+}
+
+
+}
+/*/* 🌸 DẢI LỘC XUÂN */
+.sidebar {
+    position: relative;
+}
+
+.sidebar::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 10px;
+    width: 4px;
+    border-radius: 4px;
+    background: linear-gradient(
+        to bottom,
+        #c62828,
+        #fbc02d,
+        #c62828
+    );
+    opacity: 0.8;
+}
+/* 🧧 MENU BAO LÌ XÌ */
+.sidebar a {
+    background: linear-gradient(135deg, #fffdf7, #ffebee);
+    border: 2px solid #fbc02d;
+    border-radius: 14px;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    display: block;
+    box-shadow: 0 4px 10px rgba(198, 40, 40, 0.15);
+}
+
+.sidebar a:hover {
+    background: linear-gradient(135deg, #ffebee, #fff3e0);
+    transform: translateY(-2px);
+}
+/* ✨ ÁNH VÀNG KHAI XUÂN */
+.sidebar {
+    box-shadow:
+        0 0 0 3px #fbc02d,
+        0 10px 28px rgba(251, 192, 45, 0.35);
+}
+
+.sidebar a:hover {
+    box-shadow: inset 0 0 0 2px #fbc02d;
+}
+/* 🎐 VIỀN TẾT */
+.sidebar {
+    border: 4px solid #c62828;
+    outline: 3px solid #fbc02d;
+    outline-offset: -10px;
+    border-radius: 18px;
+}
+/* ===============================
+   🎐 NỘI DUNG – VIỀN TẾT LOE MÀU
+   =============================== */
+
+main {
+    background: linear-gradient(
+        180deg,
+        #fffdf7,
+        #fff8e1
+    );
+    border-radius: 18px;
+
+    /* viền tết truyền thống */
+    border: 4px solid #c62828;
+    outline: 3px solid #fbc02d;
+    outline-offset: -12px;
+
+    /* ánh loang */
+    box-shadow:
+        0 0 0 6px rgba(251, 192, 45, 0.25),
+        0 14px 36px rgba(198, 40, 40, 0.25);
+}
+/* ===============================
+   🌸 SECTION LOE NHẸ
+   =============================== */
+
+.section {
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #fffdf4
+    );
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 28px;
+
+    box-shadow:
+        0 0 0 2px rgba(251, 192, 45, 0.25),
+        0 8px 20px rgba(251, 192, 45, 0.18);
+}
+/* ===============================
+   🎯 QUIZ LOE NHẸ
+   =============================== */
+
+.quiz {
+    background: linear-gradient(
+        180deg,
+        #fffdf7,
+        #fff8e1
+    );
+    border: 3px dashed #c62828;
+
+    box-shadow:
+        0 0 0 3px rgba(251, 192, 45, 0.3),
+        0 10px 26px rgba(251, 192, 45, 0.25);
+}
+/* ===============================
+   🔥 NỀN ĐỎ LOANG NHẸ
+   =============================== */
+
+body {
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(198, 40, 40, 0.18),
+            transparent 55%
+        ),
+        radial-gradient(
+            circle at bottom right,
+            rgba(251, 192, 45, 0.22),
+            transparent 60%
+        ),
+        linear-gradient(
+            135deg,
+            #fffdf7,
+            #fff8e1
+        );
+}
+h2 {
+    color: #b71c1c;
+    text-shadow:
+        0 0 4px rgba(251, 192, 45, 0.35),
+        0 0 8px rgba(198, 40, 40, 0.18);
+}
+
+h3 {
+    color: #c62828;
+    text-shadow:
+        0 0 3px rgba(251, 192, 45, 0.25);
+.quiz {
+    box-shadow:
+        0 0 0 4px rgba(251, 192, 45, 0.35),
+        0 0 20px rgba(198, 40, 40, 0.25),
+        0 12px 28px rgba(251, 192, 45, 0.3);
+}
+hr {
+    border: none;
+    height: 2px;
+    margin: 40px 0;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #fbc02d,
+        #c62828,
+        #fbc02d,
+        transparent
+    );
+}
+header::before {
+    content: "";
+    display: block;
+    height: 6px;
+
+    background: linear-gradient(
+        90deg,
+        #b71c1c,
+        #fbc02d,
+        #b71c1c
+    );
+    border-radius: 0 0 6px 6px;
+}
+main::after {
+    content: "";
+    position: absolute;
+    inset: -20px;
+    pointer-events: none;
+
+    background:
+        radial-gradient(circle at 20% 30%, rgba(251,192,45,.25), transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(251,192,45,.2), transparent 45%);
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+
+    background:
+        radial-gradient(circle at 20% 30%, rgba(198,40,40,0.18), transparent 45%),
+        radial-gradient(circle at 80% 70%, rgba(251,192,45,0.15), transparent 45%);
+}
+.sidebar::after {
+    content: "";
+    display: block;
+    margin-top: 30px;
+    height: 4px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #c62828,
+        #fbc02d,
+        #c62828,
+        transparent
+    );
+}
+.sidebar a:hover {
+    box-shadow:
+        0 0 0 3px rgba(251,192,45,.25),
+        0 0 14px rgba(198,40,40,.45);
+}
+
+.lantern {
+    width: 36px;
+    height: 46px;
+    margin: 0 auto 18px;
+
+    background: radial-gradient(
+        circle at 50% 30%,
+        #ffeb3b,
+        #c62828
+    );
+
+    border-radius: 6px 6px 12px 12px;
+    position: relative;
+
+    animation: swing 3.5s ease-in-out infinite;
+    transform-origin: top center;
+}
+
+
+
